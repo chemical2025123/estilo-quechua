@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor central */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #0a0909;
+  color: #fff;
+  padding: 15px 0;
+  url :('../img/logo.webp')
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+nav {
+  display: inline-block;
+  float: right;
+}
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero de inicio */
+.hero {
+  background: url('/img/logo.jpeg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #f90678;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 10px 0 20px;
+  font-size: 1.2rem;
+}
+.hero .btn {
+  background: #f707c7;
+  padding: 10px 20px;
+  border: none;
+  color: #eeebeb;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.hero .btn:hover {
+  background: #e60073;
+}
+
+/* Productos */
+.productos {
+  padding: 60px 0;
+  background: #e709b7;
+}
+.productos h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.producto {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.producto h3 {
+  margin: 15px 0 10px;
+}
+.producto p {
+  color: #555;
+}
+
+/* Contacto */
+.contacto {
+  padding: 60px 0;
+}
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.form-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+}
+.form-contacto label {
+  font-weight: bold;
+}
+.form-contacto input,
+.form-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-contacto .btn {
+  width: 150px;
+  justify-self: center;
+  background: #000;
+  color: #fff;
+}
+.form-contacto .btn:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}

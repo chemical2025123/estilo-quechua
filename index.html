@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUECHUA</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <p class="logo">QUECHUA</p>
+            <nav>
+                <a href="#">INICIO</a>
+                <a href="#">PRODUCTOS</a>
+                <a href="#">CONTACTOS</a>
+            </nav>
+        </div>
+     <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Bienvenido a QUECHUA </h1>
+      <p>Descubre lo ultimo en moda occidental y ropa abrigada</p>
+      <a href="#productos" class="btn">Ver Productos</a>
+    </div>
+  </section>
+
+  <section id="productos" class="productos">
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <div class="grid-productos">
+        <div class="producto">
+          <img src="/img/botitas.jpeg" alt="Producto 1">
+          <h3>botas</h3>
+          <p>botas con punta de acero</p>
+        </div>
+        <div class="producto">
+          <img src="/img/chamarra.jpeg" alt="Producto 2">
+          <h3>chamarras hipermeables</h3>
+          <p>poleras con tematica occidental</p>
+        </div>
+        <div class="producto">
+          <img src="/img/pantalones.jpg" alt="Producto 3">
+          <h3>Pantalones tipo jeans</h3>
+          <p>modelos de polerones</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form action="#" method="POST" class="form-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Quechua comprometido con el bien vestir al estilo occidental que nos caracteriza</p>
+    </div>
+  </footer>
+</body>
+</html>
